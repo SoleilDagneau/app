@@ -26,7 +26,7 @@ export default function Home() {
       const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
       console.log(user);
     } catch(error) {
-      
+      console.log(error.message)
     }
   }
 
@@ -35,7 +35,7 @@ export default function Home() {
       const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
       console.log(user);
     } catch(error) {
-     
+      console.log(error.message);
     }
   }
 
